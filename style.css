@@ -1,0 +1,36 @@
+
+/* General page layout */
+html, h1, h2, h3, h4, h5, h6, ul, p, {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for images */
+.image-container img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header section flexbox */
+#header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo, #main-title, #contact {
+    width: 30%;
+    padding: 1em 1.5em;
+}
+
+#logo img {
+    width: 30%;
+}
+
+#main-title {
+    h1 {
+        font-size: 4em;
+        text-align: center;
+
+    }
+}
