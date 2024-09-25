@@ -1,9 +1,10 @@
 
 /* General page layout */
-html, h1, h2, h3, h4, h5, h6, ul, p, {
+html, h1, h2, h3, h4, h5, h6, ul, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace
 }
 
 /* General styles for images */
@@ -12,25 +13,74 @@ html, h1, h2, h3, h4, h5, h6, ul, p, {
     text-align: center;
 }
 
+body {
+    margin: 1.5em 2.5em;
+}
+
 /* Header section flexbox */
-#header {
+#header {  
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #logo, #main-title, #contact {
-    width: 30%;
-    padding: 1em 1.5em;
+    background-color: yellow;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#logo, #contact {
+    width: 20%;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo img {
-    width: 30%;
+    width: 40%;
 }
 
 #main-title {
     h1 {
         font-size: 4em;
         text-align: center;
-
     }
+
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+#contact {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    ul {
+        list-style-type: none;
+        padding: 0.2em;
+    }
+
+    li {
+        padding: 0.2em;
+    }
+}
+
+.contact-links, .media{
+    display: flex;
+    align-items: center;
+}
+
+.contact-links img {
+    width: 1em;
+}
+
+.media img {
+    width: 1em;
 }
