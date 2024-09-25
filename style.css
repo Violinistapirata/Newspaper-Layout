@@ -23,11 +23,6 @@ body {
     justify-content: space-between;
 }
 
-#logo, #main-title, #contact {
-    background-color: yellow;
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
-}
-
 #logo, #contact {
     width: 20%;
 }
@@ -49,7 +44,7 @@ body {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 3em;
         text-align: center;
     }
 }
@@ -68,7 +63,11 @@ body {
     }
 
     li {
-        padding: 0.2em;
+        padding: 0.4em;
+    }
+
+    img {
+        width: 1.5em;        
     }
 }
 
@@ -77,10 +76,26 @@ body {
     align-items: center;
 }
 
-.contact-links img {
-    width: 1em;
+#nav-bar {
+    margin-top: 2em;
+    display: flex;    
 }
 
-.media img {
-    width: 1em;
+#nav-bar {
+    div {
+        width: 10%;
+        padding: 0.2em 0.5em;
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        padding: 0.2em 0.5em;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        background-color: lightgray;
+        border-radius: 10px;
+    }
 }
